@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: pipelines-vote-ui
-        bla: 123
+        bla: testxyz
     spec:
       containers:
         - image: quay.io/openshift-pipeline/vote-ui:latest

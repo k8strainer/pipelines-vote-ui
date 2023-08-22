@@ -5,7 +5,7 @@ metadata:
     app: pipelines-vote-ui
   name: pipelines-vote-ui
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: pipelines-vote-ui
@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: pipelines-vote-ui
-        bla: testkw29
+        date: 22-08-2023
         foo: bar
     spec:
       containers:

@@ -5,7 +5,7 @@ metadata:
     app: pipelines-vote-ui
   name: pipelines-vote-ui
 spec:
-  replicas: 4
+  replicas: 6
   selector:
     matchLabels:
       app: pipelines-vote-ui
@@ -13,8 +13,8 @@ spec:
     metadata:
       labels:
         app: pipelines-vote-ui
-        date: 05-11-2024
-        foo: test
+        date: 14-11-2024
+        foo: openshift-s2024
     spec:
       containers:
         - image: quay.io/openshift-pipeline/vote-ui:latest

@@ -1,0 +1,8 @@
+## VOTE-UI  (Frontend)
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vote-frontend
+  labels:
+    access: "access-to-vote-backend"

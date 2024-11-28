@@ -5,6 +5,8 @@ metadata:
     app: vote-ui
   name: vote-ui
   namespace: vote-frontend
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   port:
     targetPort: 8080-tcp

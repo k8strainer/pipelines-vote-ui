@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-ui
   name: vote-ui
-  namespace: vote-frontend
+  namespace: vote-example
 spec:
   type: NodePort
   ports:

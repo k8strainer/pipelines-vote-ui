@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: stable
+  namespace: vote-example
+spec:
+  ingressClassName: nginx
+  rules:
+  # Replace this stable-Ingress FQHN with your Domain! (Also the Canary Ingress below!)
+  - host: vote-example.gke2.gfu.cloud
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: vote-ui
+            port:
+              number: 8080

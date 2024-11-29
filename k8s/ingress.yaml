@@ -7,7 +7,7 @@ spec:
   ingressClassName: nginx
   rules:
   # Replace this stable-Ingress FQHN with your Domain! (Also the Canary Ingress below!)
-  - host: vote-example.gke2.gfu.cloud
+  - host: vote-example.gke1.gfu.cloud
     http:
       paths:
       - pathType: Prefix

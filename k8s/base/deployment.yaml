@@ -19,7 +19,8 @@ spec:
         foo: gitops
     spec:
       containers:
-        - image: quay.io/openshift-pipeline/vote-ui:latest
+        #- image: quay.io/openshift-pipeline/vote-ui:latest
+        - image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-api
           imagePullPolicy: Always
           name: vote-ui
           ports:

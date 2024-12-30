@@ -10,11 +10,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: vote-ui
+      app: pipelines-vote-ui
   template:
     metadata:
       labels:
-        app: vote-ui
+        app: pipelines-vote-ui
         date: 27-11-2024
         foo: gitops
     spec:
@@ -22,7 +22,7 @@ spec:
         #- image: quay.io/openshift-pipeline/vote-ui:latest
         - image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-ui
           imagePullPolicy: Always
-          name: vote-ui
+          name: pipelines-vote-ui
           ports:
             - containerPort: 8080
               protocol: TCP

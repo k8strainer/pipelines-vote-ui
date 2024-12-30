@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         #- image: quay.io/openshift-pipeline/vote-ui:latest
-        - image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-api
+        - image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-ui
           imagePullPolicy: Always
           name: vote-ui
           ports:

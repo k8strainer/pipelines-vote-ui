@@ -1,6 +1,9 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
+  annotations:
+    haproxy.router.openshift.io/balance: "random"
+    haproxy.router.openshift.io/disable_cookies: "true"
   labels:
     app: pipelines-vote-ui
   name: pipelines-vote-ui

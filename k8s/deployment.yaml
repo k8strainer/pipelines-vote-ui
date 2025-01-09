@@ -8,7 +8,7 @@ metadata:
   namespace: pipelines-tutorial
   #namespace: vote-example
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: pipelines-vote-ui
@@ -16,7 +16,7 @@ spec:
     metadata:
       labels:
         app: pipelines-vote-ui
-        date: 04-01-2025
+        date: 08-01-2025
         foo: gitops
     spec:
       containers:
